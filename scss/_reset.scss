@@ -1,4 +1,5 @@
-@charset "UTF-8";
+// Modern CSS reset: https://github.com/hankchizljaw/modern-css-reset
+
 /* Box sizing rules */
 *,
 *::before,
@@ -85,65 +86,3 @@ img:not([alt]) {
     scroll-behavior: auto !important;
   }
 }
-/**
- * BASE SIZE
- * All calculations are based on this. It’s recommended that
- * you keep it at 1rem because that is the root font size. You
- * can set it to whatever you like and whatever unit you like.
- */
-/**
-   * SIZE SCALE
-   * This is a Major Third scale that powers all the utilities that
-   * it is relevant for (font-size, margin, padding). All items are
-   * calcuated off the base size, so change that and cascade across
-   * your whole project.
-   */
-/**
-   * COLORS
-   * Colors are shared between backgrounds and text by default. 
-   * You can also use them to power borders, fills or shadows, for example.
-   */
-@font-face {
-  font-family: "Jost";
-  src: url(../fonts/jost-book.woff2), url(../fonts/jost-book.woff);
-}
-body {
-  font-family: "Jost", sans-serif;
-  line-height: 1.5;
-  font-size: 1.33rem;
-  background-color: hsl(13deg, 100%, 48%);
-  color: #fff;
-}
-
-a {
-  color: currentColor;
-}
-
-:focus {
-  outline: 2px dotted;
-  outline-offset: 0.25rem;
-}
-
-.flow > * + * {
-  margin-top: var(--flow-space, 1rem);
-}
-
-.wrapper {
-  max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1.33rem;
-}
-
-.vertically-middle {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-#mainContent {
-  max-width: 40rem;
-}
-
-/*# sourceMappingURL=style.css.map */

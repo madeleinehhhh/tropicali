@@ -1,0 +1,37 @@
+/**
+ * BASE SIZE
+ * All calculations are based on this. It’s recommended that
+ * you keep it at 1rem because that is the root font size. You
+ * can set it to whatever you like and whatever unit you like.
+ */
+$config-base-size: 1rem;
+
+/**
+   * SIZE SCALE
+   * This is a Major Third scale that powers all the utilities that
+   * it is relevant for (font-size, margin, padding). All items are
+   * calcuated off the base size, so change that and cascade across
+   * your whole project.
+   */
+// $config-size-scale: (
+$size-300: $config-base-size * 0.8;
+$size-400: $config-base-size;
+$size-500: $config-base-size * 1.33;
+$size-600: $config-base-size * 1.77;
+$size-700: $config-base-size * 2.4;
+
+/**
+   * COLORS
+   * Colors are shared between backgrounds and text by default. 
+   * You can also use them to power borders, fills or shadows, for example.
+   */
+// $config-colors: (
+$clr-primary: hsl(13, 100%, 48%);
+// $clr-secondary: #ff8484;
+// $clr-secondary-shade: #ff5151;
+// $clr-tertiary: #2c988c;
+// $clr-tertiary-glare: #d6fff6;
+// $clr-quaternary: #2374ab;
+$clr-light: #fff;
+// $clr-light-shade: #eeeeee;
+// $clr-grey: #c4c4c4;
